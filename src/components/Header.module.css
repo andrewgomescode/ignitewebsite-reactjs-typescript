@@ -8,3 +8,13 @@
 .header img {
   height: 2rem; /* 32 pixels */
 }
+
+.header p {
+  display: grid;
+  padding-left: 1rem;
+  padding-top: 0.416rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}

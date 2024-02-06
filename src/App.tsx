@@ -42,24 +42,22 @@ const posts: PostType[] = [
     author: {
       avatarUrl: 'https://github.com/iSyvz.png',
       name: 'Igor Gondim',
-      role: 'Top 1 LeeSin China',
+      role: 'Web Developer',
     },
 
     content: [
       {
         type: 'paragraph',
-        content: 'Acabei de me autodeclarar o melhor LeeSin do mundo.',
+        content:
+          'Ignite Feed é uma plataforma de publicações interativa e personalizável, onde os usuários podem compartilhar e descobrir uma variedade de conteúdos.',
       },
       {
         type: 'paragraph',
         content:
-          'Sou Igor Gondim (AKA Syvlum), e após anos de luta consegui finalmente subir do prata jogando de LeeSin.',
+          'Com uma interface amigável, oferece uma experiência envolvente para criadores e consumidores de conteúdo.',
       },
-      {
-        type: 'paragraph',
-        content: 'Consegui subir com apenas 1433 partidas. Meu novo recorde.',
-      },
-      { type: 'link', content: '#AgoraSouGold' },
+
+      { type: 'link', content: '#Ignite' },
     ],
     publishedAt: new Date('2024-02-05 08:02:00'),
   },
