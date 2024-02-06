@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { Post } from './components/Post';
+import { Post, PostType } from './components/Post';
 import { Sidebar } from './components/Sidebar';
 
 import styles from './App.module.css';
@@ -10,7 +10,7 @@ import './global.css';
 // publishedAt: Date
 // content: String
 
-const posts = [
+const posts: PostType[] = [
   {
     id: 1,
     author: {
@@ -21,8 +21,15 @@ const posts = [
 
     content: [
       { type: 'paragraph', content: 'Fala galeraa 👋' },
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio.' },
-      { type: 'paragraph', content: 'É um projeto que fiz no React (Meu primeiro projeto em React). O nome do projeto é Ignite 🔥' },
+      {
+        type: 'paragraph',
+        content: 'Acabei de subir mais um projeto no meu portfólio.',
+      },
+      {
+        type: 'paragraph',
+        content:
+          'É um projeto que fiz no React (Meu primeiro projeto em React). O nome do projeto é Ignite 🔥',
+      },
       { type: 'paragraph', content: 'Veja mais informações no meu LinkedIn' },
       { type: 'link', content: 'linkedin.com/in/andrewgomess' },
     ],
@@ -39,12 +46,19 @@ const posts = [
     },
 
     content: [
-      { type: 'paragraph', content: 'Acabei de me autodeclarar o melhor LeeSin do mundo.' },
       {
         type: 'paragraph',
-        content: 'Sou Igor Gondim (AKA Syvlum), e após anos de luta consegui finalmente subir do prata jogando de LeeSin.',
+        content: 'Acabei de me autodeclarar o melhor LeeSin do mundo.',
       },
-      { type: 'paragraph', content: 'Consegui subir com apenas 1433 partidas. Meu novo recorde.' },
+      {
+        type: 'paragraph',
+        content:
+          'Sou Igor Gondim (AKA Syvlum), e após anos de luta consegui finalmente subir do prata jogando de LeeSin.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Consegui subir com apenas 1433 partidas. Meu novo recorde.',
+      },
       { type: 'link', content: '#AgoraSouGold' },
     ],
     publishedAt: new Date('2024-02-05 08:02:00'),
@@ -62,9 +76,7 @@ export function App() {
             return (
               <Post
                 key={post.id}
-                author={post.author}
-                content={post.content}
-                publishedAt={post.publishedAt}
+                post={post}
               />
             );
           })}
