@@ -30,6 +30,7 @@ const posts: PostType[] = [
         content:
           'É um projeto que fiz no React (Meu primeiro projeto em React). O nome do projeto é Ignite 🔥',
       },
+
       { type: 'paragraph', content: 'Veja mais informações no meu LinkedIn' },
       { type: 'link', content: 'linkedin.com/in/andrewgomess' },
     ],
@@ -59,7 +60,7 @@ const posts: PostType[] = [
 
       { type: 'link', content: '#Ignite' },
     ],
-    publishedAt: new Date('2024-02-05 08:02:00'),
+    publishedAt: new Date('2024-02-04 08:02:00'),
   },
 ];
 
